@@ -5,8 +5,8 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage,)
 from firebase import firebase
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('LNnRgvC8QqoBeVXA58THZgSSNDEU1X8XUu9yq70v0eg28hzgMOA6PPDO4iZWbstVTpiI8CksyKDWoLdAAt95icdv57mLQKLkk3ihVEvisNw42RHxlWDheUEcKgRogEvR/asaPMLTzKfp1ftuPQIDAgdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('a9f35dcc637aeb5f7af83f0ba64f28bf')
+line_bot_api = LineBotApi('R12kOVJbfCh8a9EdMGkpKjaOyJD5Au1wFuZRomf9xUzEKJgMtSajK6Xl/vvC/WGSu7PKHC01xTO7YpNtq1nd5Wv/fGgqn4CEnCs0Z10XQoKMEDiOoQZjuE2nrP2jRWLLsHHI9vSWcP7MUpIzhFnsMwdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('633a52a67555ad5d59e278c13206289b')
 
 @app.route("/")
 def hello():
