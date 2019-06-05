@@ -44,7 +44,7 @@ def handle_message(event):
     temp = result.get('temperature')
     text1=event.message.text
     if str(text1) == "สภาพอากาศ":
-        text1 = "ล่าสุดอัพเดท: "+str(date)+"\nเวลา: "+str(time)+"\nความชื้น: "+str(humudity)+"%\nอุณหภูมิ: "+str(temp)+" องศาเซลเซียส\nปริมาณน้ำฝน: "+str(rain)+"%\n"+str(status)
+        text1 = "เวลา: "+str(time)+"\nความชื้น: "+str(humudity)+"%\nอุณหภูมิ: "+str(temp)+" องศาเซลเซียส\nปริมาณน้ำฝน: "+str(rain)+"%\n"+str(status)
     else:
         text1 = "โปรดพิมพ์ สภาพอากาศ ให้ถูกต้องหากต้องการดูสภาพอากาศ"
     line_bot_api.reply_message(
