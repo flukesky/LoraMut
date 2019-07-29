@@ -32,7 +32,7 @@ def webhook():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    url1 = 'https://lora-mut-4aaab.firebaseio.com/'
+    url1 = 'https://loramut01-19a3a.firebaseio.com/'
     messenger = firebase.FirebaseApplication(url1)
     result1 = messenger.get('/device1',None)
     result = messenger.get('/device1',list(result1)[-1])
